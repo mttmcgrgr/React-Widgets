@@ -1,0 +1,127 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.autocomplete {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-color: black;
+  border width: 3px;
+  border-style: solid;
+  background-color: red;
+}
+
+.input {
+  width: 200px;
+  height: 30px;
+}
+
+.header {
+  display: flex;
+  padding: 0px;
+  margin-bottom: 0px;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  padding: 10px;
+  margin-bottom: 30px;
+  border: 2px solid black;
+  background-color: lightgreen;
+  width: 600px;
+  height: 100px;
+}
+
+.loading {
+  display: flex;
+  padding: 10px;
+  margin-bottom: 30px;
+  border: 2px solid black;
+  background-color: lightgreen;
+  width: 600px;
+  height: 100px;
+}
+
+.pane {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    margin: 0px;
+    padding: 0px;
+    width: 608px;
+    border-top: none;
+    height: 200px;
+}
+
+.header-tab {
+  width: 200px;
+  border: 2px solid black;
+  list-style: none;
+}
+
+.selected-tab {
+  width: 200px;
+  border: 2px solid black;
+  list-style: none;
+  border-bottom: none;
+}
+
+.list-style {
+  display: flex;
+  cursor: pointer;
+  list-style-type: square;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.clock {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-color: black;
+  border width: 3px;
+  border-style: solid;
+  background-color: lightblue
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
