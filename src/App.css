@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .App-logo {
@@ -55,10 +58,11 @@
 }
 
 .weather {
+  align-self: center;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-
+  -ms-flex-pack: start;
+  justify-content: center;
   padding: 10px;
   margin-bottom: 30px;
   border: 2px solid black;
@@ -68,7 +72,11 @@
 }
 
 .loading {
+  align-self: center;
   display: flex;
+  flex-direction: column;
+  -ms-flex-pack: start;
+  justify-content: center;
   padding: 10px;
   margin-bottom: 30px;
   border: 2px solid black;
