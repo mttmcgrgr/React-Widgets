@@ -8,18 +8,22 @@ import './App.css';
 class App extends Component {
 
   render() {
-    const names = ["Matt", "Aron", "Jason", "Eddie", "Jair"];
+    const names = ["Abe", "Adam", "Matt", "Melissa", "Noelle", "Adrian"];
     const panes = [
-        {title: 'one', content: 'I am the first'},
-        {title: 'two', content: 'Second pane here'},
-        {title: 'three', content: 'Third pane here'}
+        {title: 'one', content: 'I am the first pane'},
+        {title: 'two', content: 'I am the second pane'},
+        {title: 'three', content: 'I am the third pane'}
       ];
     return (
       <div className="App">
-        <Clock />
-        <Autocomplete names={names}/>
-        <Tabs panes={panes}/>
-        <Weather />
+        <div className="row1">
+          <Clock />
+          <Weather />
+        </div>
+        <div className="row1">
+          <Autocomplete names={names}/>
+          <Tabs panes={panes}/>
+        </div>
       </div>
     );
   }

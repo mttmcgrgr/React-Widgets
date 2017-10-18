@@ -27,16 +27,26 @@ class Clock extends React.Component {
     let hours = this.state.time.getHours();
     let minutes = this.state.time.getMinutes();
     let seconds = this.state.time.getSeconds();
+    let mid = "AM";
 
     hours = (hours < 10) ? `0${hours}` : hours;
     minutes = (minutes < 10) ? `0${minutes}` : minutes;
     seconds = (seconds < 10) ? `0${seconds}` : seconds;
 
+    if (hours == '12'){
+      mid = 'PM'
+    } else if (hours > '12'){
+      hours = hours - 12;
+      mid = 'PM'
+    } else if(hours === '00'){
+      hours = '12'
+      mid = 'AM'
+    }
+
     return (
       <div className="clock">
-        <h1>Clock</h1>
-          <div>{hours}:{minutes}:{seconds}</div>
-          <div>{this.state.time.toDateString()}</div>
+        <div>TIME: {hours}:{minutes}:{seconds} {mid}</div>
+        <div> DATE: {this.state.time.toDateString()} </div>
       </div>
     )
   }

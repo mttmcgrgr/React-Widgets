@@ -33,11 +33,14 @@
   border width: 3px;
   border-style: solid;
   background-color: red;
+  width: 300px;
+  margin: 35px;
 }
 
 .input {
   width: 200px;
   height: 30px;
+  margin: 10px;
 }
 
 .header {
@@ -55,6 +58,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 10px;
 }
 
 .weather {
@@ -67,7 +71,7 @@
   margin-bottom: 30px;
   border: 2px solid black;
   background-color: lightgreen;
-  width: 600px;
+  width: 300px;
   height: 100px;
 }
 
@@ -81,7 +85,7 @@
   margin-bottom: 30px;
   border: 2px solid black;
   background-color: lightgreen;
-  width: 600px;
+  width: 300px;
   height: 100px;
 }
 
@@ -92,19 +96,20 @@
     border: 2px solid black;
     margin: 0px;
     padding: 0px;
-    width: 608px;
+    width: 308px;
     border-top: none;
     height: 200px;
 }
 
 .header-tab {
-  width: 200px;
+  width: 100px;
   border: 2px solid black;
   list-style: none;
+  background-color: lightgrey
 }
 
 .selected-tab {
-  width: 200px;
+  width: 100px;
   border: 2px solid black;
   list-style: none;
   border-bottom: none;
@@ -118,15 +123,27 @@
   align-items: flex-start;
 }
 
+.row1 {
+  display: flex;
+  flex-direction: row;
+}
+
 .clock {
   display: flex;
-  flex-direction: column;
+  text-align: left;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
   border-color: black;
-  border width: 3px;
   border-style: solid;
-  background-color: lightblue
+  background-color: lightblue;
+  width: 250px;
+  margin: 30px;
+  padding: 30px;
 }
 
 @keyframes App-logo-spin {

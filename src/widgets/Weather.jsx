@@ -29,6 +29,7 @@ class Weather extends React.Component {
       return response.json()
     }).then((responseJson) => {
       this.setState({weather: responseJson})
+      console.log(this.state.weather.weather)
     })
   }
 
